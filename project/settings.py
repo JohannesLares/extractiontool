@@ -142,12 +142,12 @@ print(service_name)
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.getenv('DATABASE_NAME'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'testidb',
         'USER': os.getenv('DATABASE_USER'),
         'PASSWORD': os.getenv('DATABASE_PASSWORD'),
-        'HOST': 'postgresql.ie-test.svc',
-        'PORT': '5432',
+        'HOST': 'mariadb-test.ie-test.svc',
+        'PORT': '3306',
     }
 }
 
