@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
     'allauth',
+    'welcome',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.orcid',
