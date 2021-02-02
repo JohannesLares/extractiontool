@@ -145,8 +145,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'testidb',
-        'USER': os.getenv('DATABASE_USER'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
+        'USER': 'django',
+        'PASSWORD': 'Testipassu123',
         'HOST': 'mariadb-test.ie-test.svc',
         'PORT': '3306',
     }
