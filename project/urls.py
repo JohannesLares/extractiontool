@@ -12,6 +12,7 @@ urlpatterns = [
     path('', homePageView, name='home'),
     path('accounts/', include('allauth.urls')),
     path('catalogue/', catalogue, name='catalogue'),
+    url(r'^health$', health)
 ]
 
 
