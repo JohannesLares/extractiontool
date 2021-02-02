@@ -137,7 +137,8 @@ WSGI_APPLICATION = 'wsgi.application'
 
 from . import database
 
-service_name = 'POSTGRESQL'
+service_name = os.getenv('DATABASE_SERVICE_NAME', '').upper().replace('-', '_')
+print(service_name)
 
 DATABASES = {
     'default': {
